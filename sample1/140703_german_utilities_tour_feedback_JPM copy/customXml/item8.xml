@@ -1,0 +1,156 @@
+<Research language="eng" createDateTime="2014-07-03T00:18:34+01:00" researchID="GPS-1431408-0" xmlns:rixmldt="http://www.rixml.org/2010/1/RIXML-datatypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.rixml.org/2010/1/RIXML http://www.rixml.org/newsite/specifications/v231/RIXML-2_3_1.xsd" xmlns="http://www.rixml.org/2010/1/RIXML">
+  <Product productID="GPS-1431408-0">
+    <StatusInfo currentStatusIndicator="Yes" statusDateTime="2014-07-03T00:18:34+01:00" statusType="Published">
+      <Version>3</Version>
+    </StatusInfo>
+    <Source>
+      <Organization primaryIndicator="Yes" type="SellSideFirm">
+        <OrganizationID idType="VendorCode">JPM</OrganizationID>
+        <OrganizationName nameType="Display">JPMorgan</OrganizationName>
+        <PersonGroup>
+          <PersonGroupMember primaryIndicator="Yes" sequence="1">
+            <Person personID="V026176">
+              <FamilyName>Casali</FamilyName>
+              <GivenName>Nathalie</GivenName>
+              <DisplayName>Nathalie F Casali</DisplayName>
+              <JobTitle>Analyst</JobTitle>
+              <Division>EQUITY RESEARCH</Division>
+            </Person>
+          </PersonGroupMember>
+          <ContactInfo nature="Business">
+            <Email>nathalie.x.casali@jpmorgan.com</Email>
+            <Phone type="Voice">
+              <CountryCode />
+              <Number>(44-20) 7134-9023</Number>
+            </Phone>
+          </ContactInfo>
+        </PersonGroup>
+      </Organization>
+    </Source>
+    <Content>
+      <Title>RWE and E.ON</Title>
+      <SubTitle>German utilities investor tour feedback - ALERT</SubTitle>
+      <Abstract>On July 1st we hosted group meetings with Klaus Schaffer, E.ON’s CFO, Stein Dale, E.ON’s Head of Strategy, Peter Terium, RWE’s CEO, and Martin Hermann, CEO of RWE East. RWE conveyed the vision of a leaner group focused on downstream with a free option in power generation, which in our view continues to contrast favorably with E.ON (see links to previous research in the right panel). That being said, at these levels we see more potential value in the latter (positive gearing to a CO2 recovery and German capacity markets, growth options outside of Europe). Near term, however, we would expect investors to continue reducing underweight positions indiscriminately in both E.ON and RWE given the perceived potential upside from capacity payments, higher power prices, further cost cutting and a burden sharing deal with the government on long-term nuclear liabilities.  
+
+
+German political backdrop: benign, not yet supportive. According to E.ON and RWE, the reformed EEG law will change very little for conventional utilities, with renewable additions simply slowing down versus 2012/13. RWE’s lignite mining business will continue to be exempt from the EEG levy for now, but there is no clarity beyond 2016 (maximum downside to EBIT €190m p.a. or 10% of 2017 EPS). Both companies reiterated their wishes for a non-discriminatory capacity market but E.ON management in particular is realistic about the likelihood of the system being geographically and technologically selective. Timing wise, the capacity market design should be finalized by the end of this year and a white paper should be published by the middle of next year. This will be followed by a consultation with the EU and other countries which may lead to legislation before 2016. 
+
+
+No discussions on a nuclear “bad utility”. Both companies reiterated that there are currently no discussions with politicians on the subject of a potential burden sharing agreement on long term nuclear liabilities, though clearly they would be open to this. As detailed in our May 15th note, unburdening E.ON and RWE of their long term fuel storage liabilities (the most sensitive topic from the point of view of public health and the environment) could potentially accrete equity values by €6.6bn and €5.5bn, respectively. Any potential negotiation will likely take several years to conclude, in our view. 
+
+
+Generation a free option? Both companies expect their generation businesses will not turn cash negative on a mark to market basis (according to E.ON, €1.2bn of EBITDA in the medium term is a reasonable objective, which would allow the company to cover both maintenance capex of c€0.3-0.4bn and cash outflows related to nuclear liabilities of c€0.8bn). According to RWE, with coal prices having bottomed out (which we do not think is evident, as per JPM coal analysts’ latest report) and plans for capacity payments being drawn up in the UK and Germany, generation now represents a free option. That the business stays cash positive remains a strict requirement and further cost cutting efforts, if necessary, will ensure this is the case. 
+
+
+Clear vision of the equity story transformation at RWE. RWE’s CEO thus conveyed a clear message of deep equity story transformation, in our view. Following the sale of DEA (which is very likely to complete, with the government expected to give its view on the deal by the end of the year), RWE’s refinancing requirements should be very manageable. However, management continues to consider that a 3.0x economic leverage target is prudent, and it is also an important point of focus for the company’s internal focus on efficiency. Our view however remains that the leverage target could be reviewed over the next 18-24 months. The group remains very focused on FCF generation (including working capital management) and a third cost cutting wave will be announced, most likely in March 2015. Given the above, and with cash costs of nuclear decommissioning expected to stay stable at €0.3-0.4bn p.a. for the next decade, we believe a return to growth capex or indeed a payout ratio increase (though obviously politically unadvisable near term) are options that will be considered once the company has “earned its right to grow again”.
+
+
+More uncertainty about the future shape of the group at E.ON. Our perception remains that there is less strategic clarity at E.ON than at RWE, partly because of the group’s higher geographical and business diversification. Management is pleased with the progress of its Turkish business, whilst it continues to focus on stabilizing Eneva before further growth options are examined. E&amp;P is managed as a standalone business, given the lack of synergies with the rest of the group. Capex over the next few years will focus on renewables, distributed energy and regulated grids. Cost cutting efforts will continue, potentially beyond the need to offset inflation, but the company does not expect to communicate group-wide targets at this stage. Management says it will rotate assets on an opportunistic basis (no comment on press reports of a disposal process in Italy or Spain). In summary, E.ON’s diversification seems to be less of an advantage versus peers (particularly RWE) than it could be. 
+
+
+</Abstract>
+      <Synopsis>On July 1st we hosted group meetings with Klaus Schaffer, E.ON’s CFO, Stein Dale, E.ON’s Head of Strategy, Peter Terium, RWE’s CEO, and Martin Hermann, CEO of RWE East. RWE conveyed the vision of a leaner group focused on downstream with a free option in power generation, which in our view contin...</Synopsis>
+    </Content>
+    <Context external="Yes">
+      <IssuerDetails>
+        <Issuer domicileCountryCode="DE" fiscalYearEnd="--12-31" issuerType="Corporate" primaryIndicator="No">
+          <SecurityDetails>
+            <Security primaryIndicator="No">
+              <SecurityID idType="CUSIP" idValue=" " />
+              <SecurityID idType="SEDOL" idValue="4942904" />
+              <SecurityID idType="Bloomberg" idValue="EOAN GR" />
+              <SecurityID idType="RIC" idValue="EONGn.DE" />
+              <SecurityID idType="ISIN" idValue="DE000ENAG999" />
+              <AssetClass assetClass="Equity" />
+              <AssetType assetType="Stock" />
+              <Rating priorCurrent="Prior" rating="NeutralSentiment" timeFrame="ShortTerm">
+                <RatingEntity ratingEntity="Publisher" />
+              </Rating>
+              <Rating priorCurrent="Current" rating="NeutralSentiment" timeFrame="ShortTerm">
+                <RatingEntity ratingEntity="Publisher" />
+              </Rating>
+            </Security>
+          </SecurityDetails>
+          <IssuerName nameType="Display">
+            <NameValue>E.ON</NameValue>
+          </IssuerName>
+        </Issuer>
+        <Issuer domicileCountryCode="DE" fiscalYearEnd="--12-31" issuerType="Corporate" primaryIndicator="No">
+          <SecurityDetails>
+            <Security primaryIndicator="No">
+              <SecurityID idType="CUSIP" idValue=" " />
+              <SecurityID idType="SEDOL" idValue="4768962" />
+              <SecurityID idType="Bloomberg" idValue="RWE GR" />
+              <SecurityID idType="RIC" idValue="RWEG.DE" />
+              <SecurityID idType="ISIN" idValue="DE0007037129" />
+              <AssetClass assetClass="Equity" />
+              <AssetType assetType="Stock" />
+              <Rating priorCurrent="Prior" rating="NeutralSentiment" timeFrame="ShortTerm">
+                <RatingEntity ratingEntity="Publisher" />
+              </Rating>
+              <Rating priorCurrent="Current" rating="NeutralSentiment" timeFrame="ShortTerm">
+                <RatingEntity ratingEntity="Publisher" />
+              </Rating>
+            </Security>
+          </SecurityDetails>
+          <IssuerName nameType="Display">
+            <NameValue>RWE</NameValue>
+          </IssuerName>
+        </Issuer>
+      </IssuerDetails>
+      <ProductDetails periodicalIndicator="No" publicationDateTime="2014-07-03T00:18:34+01:00">
+        <ProductCategory productCategory="Comment" />
+        <ProductFocus focus="SectorIndustry" primaryIndicator="Yes" />
+        <EntitlementGroup>
+          <Entitlement includeExcludeIndicator="Include" primaryIndicator="No">
+            <AudienceTypeEntitlement audienceType="QualifiedInstitutionalBuyer" external="Yes" />
+          </Entitlement>
+        </EntitlementGroup>
+        <EntitlementGroup>
+          <Entitlement includeExcludeIndicator="Include" primaryIndicator="No">
+            <AudienceTypeEntitlement audienceType="Institutional" external="Yes" />
+          </Entitlement>
+        </EntitlementGroup>
+        <EntitlementGroup>
+          <Entitlement includeExcludeIndicator="Include" primaryIndicator="No">
+            <AudienceTypeEntitlement audienceType="Retail" external="Yes" />
+          </Entitlement>
+        </EntitlementGroup>
+      </ProductDetails>
+      <ProductClassifications>
+        <KeywordClassifications>
+          <Keyword>JPMORGANCAZENOVE</Keyword>
+        </KeywordClassifications>
+        <Discipline disciplineType="Investment" />
+        <Country code="DE" primaryIndicator="No" emergingIndicator="No" />
+        <Region primaryIndicator="No" regionType="Europe" emergingIndicator="No" />
+        <AssetClass assetClass="Equity" />
+        <AssetType assetType="Stock" />
+        <SectorIndustry classificationType="GICS" code="55" focusLevel="Yes" level="1" primaryIndicator="No">
+          <Name>Utilities</Name>
+        </SectorIndustry>
+        <SectorIndustry classificationType="GICS" code="5510" focusLevel="Yes" level="2" primaryIndicator="No">
+          <Name>Utilities</Name>
+        </SectorIndustry>
+        <SectorIndustry classificationType="GICS" code="551010" focusLevel="Yes" level="3" primaryIndicator="No">
+          <Name>Electric Utilities</Name>
+        </SectorIndustry>
+        <SectorIndustry classificationType="GICS" code="55101010" focusLevel="Yes" level="4" primaryIndicator="Yes">
+          <Name>Electric Utilities</Name>
+        </SectorIndustry>
+        <SectorIndustry classificationType="GICS" code="551030" focusLevel="Yes" level="3" primaryIndicator="No">
+          <Name>Multi-Utilities</Name>
+        </SectorIndustry>
+        <SectorIndustry classificationType="GICS" code="55103010" focusLevel="Yes" level="4" primaryIndicator="Yes">
+          <Name>Multi-Utilities</Name>
+        </SectorIndustry>
+        <SectorIndustry classificationType="GICS" code="551050" focusLevel="Yes" level="3" primaryIndicator="No">
+          <Name>Independent Power and Renewable Electricity Producers</Name>
+        </SectorIndustry>
+        <SectorIndustry classificationType="GICS" code="55105010" focusLevel="Yes" level="4" primaryIndicator="Yes">
+          <Name>Independent Power Producers &amp; Energy Traders</Name>
+        </SectorIndustry>
+      </ProductClassifications>
+    </Context>
+  </Product>
+</Research>

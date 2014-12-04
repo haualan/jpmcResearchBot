@@ -1,0 +1,21 @@
+<publishingControl xmlns="http://www.w3.org/2001/XMLSchema-instance">
+  <action>Publish</action>
+  <type>
+    <primary>RESEARCH</primary>
+  </type>
+  <distribution>
+    <destination>THOMSON-EQUITIES</destination>
+    <destination>GREENJAR</destination>
+    <destination>BLOOMBERG-EMEA</destination>
+    <destination>CAPITAL-IQ-EQUITIES</destination>
+    <destination>WSOD</destination>
+    <destination>MORGAN-MARKETS</destination>
+    <destination>REUTERS-EQUITIES</destination>
+    <destination>VAULT</destination>
+    <destination>PRIVATEBANK</destination>
+    <destination>WSOD-RBC</destination>
+    <destination>WSOD-MorganOnline</destination>
+    <destination>FACTSET</destination>
+  </distribution>
+  <documentId>GPS-1431408-0</documentId>
+</publishingControl>

@@ -1,0 +1,180 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>STP Template</title>
+</head>
+<body style="background-color: #ffffff; font-size: 8pt; color: #5F5F5F; font-family: Arial;
+    margin: 0px" link="#006BA6" vlink="#006BA6">
+    <table cellpadding="0" cellspacing="0" style="border: 0; height: 100%; background-color: #ffffff;
+        width: 98%">
+        <tr>
+            <td style="height: 100%;">
+                <table style="border: 0; height: 100%; background-color: #ffffff; width: 100%" cellpadding="0"
+                    cellspacing="0">
+                    <tr>
+                        <td>
+                                                         <br />
+                            <br />
+                            <table cellpadding="0" cellspacing="0" style="width: 98%">
+                                <tr>
+                                    <td style="text-align: left">
+                                        <img style="border: 0; width: 413px; height: 52px" src="STPlogo.gif" alt="J.P. Morgan Logo" />
+                                    </td>
+                                    <td style="text-align: right; vertical-align: bottom">
+                                        <span style="text-align: right; font-family: 'Arial'; font-size: 12pt; color: #4e8abe;">
+                                            <b>Europe&nbsp;Credit Research</b></span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr style="height: 6px; color: #9AB0CB; background-color:#9AB0CB" />
+                            <p style="text-align: left; font-family: 'Arial'; font-size: 16pt; color: #4e8abe;">
+                                <b>Credit Market Technical Indicators: Strategies for Rules-based and Algorithmic Investors 2 July 2014</b></p>
+                                                        <br />
+                            <div style="display: none">@@INSERT_ATTACHMENT_REPLACEMENT@@</div>
+                            <br />
+                                                                                    <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        <b>Our iTraxx Main Technical </b><b>Indicat</b><b>ors (latest </b><b>spread </b><b>level </b><b>58.50</b><b>bp</b><b> S</b><b>2</b><b>1</b><b>,</b><b> all spreads in this document and in our calculations are roll-adjusted):</b><b> </b>
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        Momentum Indicator: Long risk trade 23 May 69.00bp
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        Directional Movement Indicator<b>:</b> No trade at present 
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        Relative Strength Index: No trade at present 
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        House of Cards Indicator:  No trade at present 
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        Regime Switching Indicator:  Trending mode, Momentum long risk trade 1 July 59.75bp
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        We track the performance of two portfolios – Portfolio A which is an equally weighted average of Momentum, DMI, RSI and House of Cards.  And separately, the Regime Switching Indicator on its own.
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        Portfolio A P&L over the past 12 months is 10.4bp, and 0.3bp YTD, Regime Switching model P&L over the past 12 months is 30.9bp, and -2.8bp YTD
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        If you would like to receive this publication on a more frequent basis (when a signal is produced), please email <a href='mailto:tina.t.zhang@jpmorgan.com' target='\_blank\'>tina.t.zhang@jpmorgan.com</a> to be added to our mailing list.
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        While we try not to put too much emphasis on “technical analysis”, we have found that our indicators would have historically provided very good results for rules-based/algorithmic investors. The signals are also interesting to look at from the perspective of gauging how much impetus there is behind market moves – some indicators attempt to confirm whether a trend has been established, while the others attempt to signal turning points.
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        Since our previous publication, our mean reversion indicators that put on short risk trades in early June have been forced to stop out of their trades.  
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <ul>
+                                <li style="margin-top: 0em; margin-bottom: .5em; padding: 0 0 0 5px; font-size: 13px;">
+                                    <p style="text-align: left; font-family: 'Times New Roman'; font-size: 10pt; color: #000000;">
+                                        As the pace of spread tightening has slowed, our Momentum model could close out of its long-held sell protection trade if spreads widen to the low-60s.
+                                    </p>
+                                </li>
+                            </ul>
+                                                                                                                <p style="font-family: 'Times New Roman';font-size: 10pt; color: #4E8ABE">
+                                Click <b><u><a href="#@@JPMM_LINK_NO_PASSWORD@@" style="color: #4e8abe;">here</a></u></b> for the full Note
+                                and disclaimers.</p>
+                                                                                    <br />
+                            <span style="text-align: left;"><b><span style="font-family: 'Times New Roman';font-size: 10pt; color: #4E8ABE"><a
+                                href="http://jpmorganmarkets.com/JPMM/Container?app=research.analyst_page&analystId=D113562" style="color: #4e8abe;">Tina T Zhang, CFA</a></span></b>
+                                <br />
+                                <span style="font-family: 'Times New Roman';font-size: 10pt; color: #000000">(44-20) 7134-0315</span>
+                                <br />
+                                <span style="font-family: 'Times New Roman';font-size: 10pt; color: #000000">tina.t.zhang@jpmorgan.com</span>
+                                <br />
+                                                            </span>
+                                                        <br />
+                            <span style="text-align: left;"><b><span style="font-family: 'Times New Roman';font-size: 10pt; color: #4E8ABE"><a
+                                href="http://jpmorganmarkets.com/JPMM/Container?app=research.analyst_page&analystId=U889246" style="color: #4e8abe;">Saul Doctor</a></span></b>
+                                <br />
+                                <span style="font-family: 'Times New Roman';font-size: 10pt; color: #000000">(44-20) 7134-1539</span>
+                                <br />
+                                <span style="font-family: 'Times New Roman';font-size: 10pt; color: #000000">saul.doctor@jpmorgan.com</span>
+                                <br />
+                                                            </span>
+                                                        <br />
+                            <table style="border: 0; background-color: #ffffff; width: 100%; height: 5%" cellpadding="0"
+                                cellspacing="0">
+                                <tr>
+                                    <td style="text-align: left; width: 75%; height: 20">
+                                        <span style="font-family: 'Times New Roman';font-size: 10pt; color: #4e8abe">Visit <b><u><a href="https://markets.jpmorgan.com/" style="color: #4e8abe;">J.P. Morgan Markets</a></u></b> for more market-leading research and financial solutions across the full trade and investment lifecycle.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table style="border: 0; background-color: #ffffff; width: 100%; height: 5%" cellpadding="0"
+                                cellspacing="0">
+                                <tr>
+                                    <td style="text-align: left; width: 75%; height: 20">
+                                        <span style="font-family: 'Times New Roman';font-size: 8pt; color: #000000">If you no longer wish to receive these e-mails then <a href="#@@JDS_UNSUBSCRIBE@@" style="color: #4e8abe;">click here to unsubscribe</a></span>
+                                    </td>
+                                    <td style="text-align: right; width: 25%; height: 20">
+                                        <p align="right">
+                                            <span style="font-family: 'Times New Roman';font-size: 10pt; color: #4E8ABE"><b><a href="https://markets.jpmorgan.com/" style="color: #4e8abe;">www.jpmorganmarkets.com</a></b></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr />
+                            
+<span style="font-family:Times New Roman;font-size: 9pt;"><div style='font-family:Times New Roman; font-size: 6pt;'/><br/></div> Analyst certification: I certify that: (1) all of the views expressed in this research accurately reflect my personal views about any and all of the subject securities or issuers; and (2) no part of my compensation was, is, or will be directly or indirectly related to the specific recommendations or views expressed herein. Important disclosures, including price charts, are available for compendium reports and all J.P. Morgan–covered companies by visiting  <a href = "https://jpmm.com/research/disclosures" >https://jpmm.com/research/disclosures</a>, calling 1-800-477-0406, or e-mailing <a href= "mailto:research.disclosure.inquiries@jpmorgan.com"> research.disclosure.inquiries@jpmorgan.com</a> with your request. J.P. Morgan’s Strategy, Technical, and Quantitative Research teams may screen companies not covered by J.P. Morgan. For important disclosures for these companies, please call 1-800-477-0406 or e-mail <a href= "mailto:research.disclosure.inquiries@jpmorgan.com"> research.disclosure.inquiries@jpmorgan.com</a>. <div style='font-family:Times New Roman; font-size: 6pt;'/><br/></div></span><span style="font-family:Times New Roman;font-size: 9pt;">J.P. Morgan does and seeks to do business with companies covered in its research reports. As a result, investors should be aware that the firm may have a conflict of interest that could affect the objectivity of this report. Investors should consider this report as only a single factor in making their investment decision. <div style='font-family:Times New Roman; font-size: 6pt;'/><br/></div></span><span style="font-family:Times New Roman;font-size: 9pt;">J.P.Morgan Securities Plc is a member of the London Stock Exchange and is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority.  Registered in England & Wales No. 2711006. Registered Office 25 Bank Street, London, E14 5JP. <div style='font-family:Times New Roman; font-size: 6pt;'/><br/></div></span><span style="font-family:Times New Roman;font-size: 9pt;">Confidentiality and Security Notice: This transmission may contain information that is privileged, confidential, legally privileged, and/or exempt from disclosure under applicable law. If you are not the intended recipient, you are hereby notified that any disclosure, copying, distribution, or use of the information contained herein (including any reliance thereon) is STRICTLY PROHIBITED. Although this transmission and any attachments are believed to be free of any virus or other defect that might affect any computer system into which it is received and opened, it is the responsibility of the recipient to ensure that it is virus free and no responsibility is accepted by JPMorgan Chase & Co., its subsidiaries and affiliates, as applicable, for any loss or damage arising in any way from its use. If you received this transmission in error, please immediately contact the sender and destroy the material in its entirety, whether in electronic or hard copy format. <div style='font-family:Times New Roman; font-size: 6pt;'/><br/></div></span>
+
+                            <br />
+                            <hr />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>
+                                            </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

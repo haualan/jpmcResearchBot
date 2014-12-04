@@ -1,0 +1,30 @@
+<JpmcExtensions>
+  <EmailAlert>Y</EmailAlert>
+  <Searchable>Y</Searchable>
+  <SourceSystem>GPSAuthor</SourceSystem>
+  <Permission>100</Permission>
+  <BulletList>
+    <component id="SUMMARY.ASCII.FORMATTEDBULLET" isBullet="Yes" order="1">Trade P/L for all recommended trades closed in 2014</component>
+    <component id="SUMMARY.ASCII.FORMATTEDBULLET" isBullet="Yes" order="2">Summary performance statistics for trades closed in 2011-2014 </component>
+    <component id="SUMMARY.ASCII.FORMATTEDBULLET" isBullet="Yes" order="3">Covering Europe, UK, Scandinavia, Japan and Australia/New Zealand trades</component>
+  </BulletList>
+  <ContentTypeList>
+    <ContentType>PUBNOT</ContentType>
+  </ContentTypeList>
+  <PublicationID>9000883</PublicationID>
+  <PrimaryAnalystList>
+    <PrimaryAnalyst analystID="U795514">Fabio Bassi</PrimaryAnalyst>
+  </PrimaryAnalystList>
+  <SecondaryAnalystList>
+    <SecondaryAnalyst analystID="U631219">Gianluca Salford</SecondaryAnalyst>
+    <SecondaryAnalyst analystID="U401071">Francis Diamond</SecondaryAnalyst>
+    <SecondaryAnalyst analystID="V105211">Sally M Auld</SecondaryAnalyst>
+    <SecondaryAnalyst analystID="W313326">Takafumi Yamawaki</SecondaryAnalyst>
+    <SecondaryAnalyst analystID="R531657">Valerian Branco</SecondaryAnalyst>
+  </SecondaryAnalystList>
+  <PrimaryCompanyList />
+  <SecondaryCompanyList />
+  <ExpiryDate></ExpiryDate>
+  <RICList />
+  <RenderHtmlFlag>N</RenderHtmlFlag>
+</JpmcExtensions>

@@ -1,0 +1,10 @@
+<publishingControl xmlns="http://www.w3.org/2001/XMLSchema-instance">
+  <action>Publish</action>
+  <type>
+    <primary>RESEARCH</primary>
+  </type>
+  <distribution>
+    <destination>MORGAN-MARKETS</destination>
+  </distribution>
+  <documentId></documentId>
+</publishingControl>

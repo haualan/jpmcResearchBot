@@ -1,0 +1,11 @@
+<publishingControl xmlns="http://www.w3.org/2001/XMLSchema-instance">
+  <action>Publish</action>
+  <type>
+    <primary>RESEARCH</primary>
+  </type>
+  <distribution>
+    <destination>BONDHUB</destination>
+    <destination>MORGAN-MARKETS</destination>
+  </distribution>
+  <documentId>GPS-1431242-0</documentId>
+</publishingControl>
