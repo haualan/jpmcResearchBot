@@ -23,4 +23,4 @@ More uncertainty about the future shape of the group at E.ON. Our perception rem
 # sample_text = removeNonAscii(sample_text)
 # sample_text = unicode(sample_text, errors='ignore')
 
-sample_text = sample_text * 100
+sample_text = sample_text

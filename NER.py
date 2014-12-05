@@ -2,6 +2,9 @@ import nltk, re
 from nltk.chunk import RegexpParser
 import sample
 import multiprocessing as mp
+import DB
+
+def removeNonAscii(s): return "".join(filter(lambda x: ord(x)<128, s))
 
 def excludeKeywords(exclusion_list, iKeywords):
   # result = []
@@ -30,9 +33,12 @@ def constructTrainData(inclusion_list):
 
   return result
 
-def NE_fork(sentence):
+def NE_fork(sentences):
 
-    # set trained tags
+  sentence = sentences[0]
+  inclusion_list = sentences[1]
+
+  # set trained tags
   traindata =  constructTrainData(inclusion_list)
 
   # define nltk taggers
@@ -70,6 +76,8 @@ def NE_fork(sentence):
   # Create an instance of your custom parser.
   custom_tag_parser = RegexpParser(grammar)
 
+  # print custom_tag_parser.parse(pos_tags)
+
   # Parse!
   for i in custom_tag_parser.parse(pos_tags):
     if type(i) == nltk.tree.Tree: 
@@ -87,7 +95,9 @@ def NE_fork(sentence):
 def findNamedEntities(raw_text, inclusion_list):
 
   # clear data from unicode text:
-  raw_text = unicode(raw_text, errors='ignore')
+  # raw_text = unicode(raw_text, errors='ignore')
+
+  raw_text = removeNonAscii(raw_text)
 
   # # set trained tags
   # traindata =  constructTrainData(inclusion_list)
@@ -100,10 +110,13 @@ def findNamedEntities(raw_text, inclusion_list):
   # # sentence is just your raw text input
   # sentence = raw_text
 
-  # consider forking processes here and pass each sentence to a process
+  # consider forking processes here and process each sentence to a thread
   pool = mp.Pool()
   sentence = nltk.sent_tokenize(raw_text)
-  NE  = list(pool.map(NE_fork, sentence))
+  sentences = list(map(lambda x: [x, inclusion_list],sentence))
+
+  # print sentences
+  NE  = list(pool.map(NE_fork, sentences))
 
 
   NE = [num for elem in NE for num in elem]
@@ -112,10 +125,13 @@ def findNamedEntities(raw_text, inclusion_list):
 
 if __name__ == '__main__':
 
-  inclusion_list = ['alan', 'Curie', 'today alan alan', 'business diversification']
-  exclusion_list = ['Nasdaq']
+  # inclusion_list = ['alan', 'Curie', 'today alan alan', 'business diversification']
+  # exclusion_list = ['Nasdaq']
 
 
+  inclusion_list = DB.getInclusionList()
+
+  # print inclusion_list
  
 
   NE = findNamedEntities(sample.sample_text, inclusion_list)

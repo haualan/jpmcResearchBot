@@ -1,5 +1,7 @@
 #!flask/bin/python
 from flask import Flask, jsonify, request, abort
+import NER
+import DB
 
 app = Flask(__name__)
 
@@ -46,7 +48,22 @@ def create_task():
         abort(400)
     # istr = request.json['text']
     istr = request.get_json(force=True)['text'] 
-    keywords = ['foo','bar', istr]
+
+    inclusion_list = DB.getInclusionList()
+    exclusion_list = DB.getExclusionList()
+
+    keywords = NER.findNamedEntities(istr, inclusion_list)
+
+    # keywords = ['foo','bar', istr]
+
+    # omit repeats and return lowercase
+    keywords = sorted(list(set(i.lower() for i in keywords)))
+
+    # exclude certain keywords
+    keywords = NER.excludeKeywords(exclusion_list, keywords)
+
+
+
     return jsonify({'keywords': keywords}), 201
 
 

@@ -2,10 +2,15 @@ import MySQLdb as mdb
 import sys
 
 def getInclusionList():
-  return execSQL("SELECT word FROM T_inclusion")
+  result = execSQL("SELECT word FROM T_inclusion")
+  return list(map(lambda x: x[0],result))
 
 def getExclusionList():
-  return execSQL("SELECT word FROM T_exclusion")
+  result = execSQL("SELECT word FROM T_exclusion")
+  return list(map(lambda x: x[0],result))
+
+def getIdfSum():
+  result = execSQL("SELECT word FROM T_exclusion")
 
 
 def execSQL(sqlStr):
@@ -21,9 +26,8 @@ def execSQL(sqlStr):
       cur = con.cursor()
       cur.execute("SELECT VERSION()")
 
-      ver = cur.fetchone()
-      
-      print "Database version : %s " % ver
+      # ver = cur.fetchone()
+      # print "Database version : %s " % ver
 
       # Use all the SQL you like
       cur.execute(sqlStr)
@@ -32,9 +36,11 @@ def execSQL(sqlStr):
       # for row in cur.fetchall() :
       #     print row[0]
 
-      result = list(map(lambda x: x[0],cur.fetchall()))
 
+      # result = list(map(lambda x: x[0],cur.fetchall()))
 
+      # just return raw results from function, manipulate them in subsequent functions
+      result = cur.fetchall()
 
 
       
@@ -54,3 +60,4 @@ if __name__ == '__main__':
   inclusionList = getInclusionList()
   exlusionList = getExclusionList()
   print inclusionList, exlusionList
+
