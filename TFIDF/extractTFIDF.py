@@ -2,17 +2,24 @@ from __future__ import division
 import operator,math
 import nltk
 import string
-import os
+import os, sys
+# need to add path so we can access parent folder for DB settings
+sys.path.append('../')
 import codecs
-import mysqlHandler
+import DB
 from random import shuffle
 from nltk.corpus import wordnet as wn
 from nltk.stem.porter import *
 from nltk.stem.lancaster import LancasterStemmer
+import sample
+
+
 
 from config import KEYWORDS_NUM
 
 docs_list = []
+
+def removeNonAscii(s): return "".join(filter(lambda x: ord(x)<128, s))
 
 def isPunct(word):
     return len(word) == 1 and word in string.punctuation
@@ -69,18 +76,19 @@ class keywordExtractor:
         word_scores = {}
         uniqTerms = word_freq.keys()
 
-        con = mysqlHandler.get_con()
+        con = DB.get_con()
 
         for word in uniqTerms:
             word_scores[word] = self._calculate_tf_idf(word,word_freq,con)
         return word_scores
 
     def _calculate_tf_idf(self,word,word_freq,con):
-        idf = mysqlHandler.get_idf(word,con)
+        idf = DB.get_idf(word,con)
         tf = 1 + math.log(word_freq[word]) if word_freq[word] else 0
         return tf*idf
        
     def extract(self, text, incl_scores=False):
+        text +=  "." if not text[-1] == "." else None
         sentences = nltk.sent_tokenize(text)
         phrase_list = self._generate_candidate_keywords(sentences)
         word_scores = self._calculate_word_scores( phrase_list)
@@ -114,11 +122,19 @@ def test():
         print '\nProcessing...Extracting Keywords From...',fileInProcessing
         with open(fileInProcessing, 'r') as file:
             doc = file.read().lower()
-            doc = unicode(doc , errors='ignore')
+            # doc = unicode(doc , errors='ignore')
             keywords = ke.extract( doc, incl_scores = True)
             for k in keywords:
                 print k
             file.close()
+
+def findTFIDFkeywords(istr):
+    ke = keywordExtractor()
+    return ke.extract(istr,incl_scores=False)
     
 if __name__ == "__main__":
-    test()
+    # test()
+    # string_a = "andy alan jpmc limited research bot maker limited process "
+    string_a = sample.sample_text
+    ke = keywordExtractor()
+    print ke.extract(string_a,incl_scores=False)

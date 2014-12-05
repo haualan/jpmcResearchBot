@@ -1,10 +1,13 @@
 import nltk, re
 from nltk.chunk import RegexpParser
+import os, sys
+# need to add path so we can access parent folder for DB settings
+sys.path.append('../')
 import sample
 import multiprocessing as mp
 import DB
 
-def removeNonAscii(s): return "".join(filter(lambda x: ord(x)<128, s))
+
 
 def excludeKeywords(exclusion_list, iKeywords):
   # result = []
@@ -97,7 +100,7 @@ def findNamedEntities(raw_text, inclusion_list):
   # clear data from unicode text:
   # raw_text = unicode(raw_text, errors='ignore')
 
-  raw_text = removeNonAscii(raw_text)
+  # raw_text = removeNonAscii(raw_text)
 
   # # set trained tags
   # traindata =  constructTrainData(inclusion_list)
@@ -128,8 +131,9 @@ if __name__ == '__main__':
   # inclusion_list = ['alan', 'Curie', 'today alan alan', 'business diversification']
   # exclusion_list = ['Nasdaq']
 
-
+  # con = DB.get_con()
   inclusion_list = DB.getInclusionList()
+  exclusion_list = DB.getExclusionList()
 
   # print inclusion_list
  

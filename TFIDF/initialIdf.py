@@ -2,16 +2,20 @@ from __future__ import division
 import operator
 import nltk
 import string
-import os
+import os, sys
+# need to add path so we can access parent folder for DB settings
+sys.path.append('../')
 import codecs
 from random import shuffle
 from nltk.corpus import wordnet as wn
 from nltk.stem.porter import *
 from nltk.stem.lancaster import LancasterStemmer
-import mysqlHandler
+import DB
 from config import DOC_DIRECTORY
 
 docs_list = []
+
+def removeNonAscii(s): return "".join(filter(lambda x: ord(x)<128, s))
 
 def isPunct(word):
     return len(word) == 1 and word in string.punctuation
@@ -28,17 +32,18 @@ def _getSources():
     for i,f in enumerate(docs_list):
         with open(f, 'r') as file:
             text = file.read().lower()
-            text = unicode(text , errors='ignore')
+            text = removeNonAscii(text)
+            # text = unicode(text , errors='ignore')
             sentences = nltk.sent_tokenize(text)
             #print self._generate_word_list(sentences)
             current_doc_uniq_word_list = list(set(_generate_word_list(sentences)))
             
-            con = mysqlHandler.get_con()
+            con = DB.get_con()
 
             for w in current_doc_uniq_word_list:
                 if not isNumeric(w) and len(w)>1:
-                    mysqlHandler.incr_occurrence(w,con)
-            mysqlHandler.incr_total_doc_number(con)
+                    DB.incr_occurrence(w,con)
+            DB.incr_total_doc_number(con)
 
             con.close()
             file.close()
@@ -76,7 +81,7 @@ def _generate_candidate_keywords(sentences):
     return phrase_list
 
 
-def test():
+def initializeIDF():
     global docs_list
     os.chdir(DOC_DIRECTORY)
     for file in os.listdir("./"):
@@ -88,4 +93,4 @@ def test():
     print _getSources()
 
 if __name__ == "__main__":
-    test()
+    initializeIDF()
