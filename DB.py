@@ -16,16 +16,23 @@ def getIdfSum():
 def execSQL(sqlStr):
   result=[]
   try:
+      # for local env
+      # con = mdb.connect(host="localhost", # your host, usually localhost
+      #                  user="root", # your username
+      #                   # passwd="somepasswd", # your password
+      #                   db="jpmcResearchBot_DB") # name of the data base
+
+      # for amzn server env
       con = mdb.connect(host="localhost", # your host, usually localhost
                        user="root", # your username
-                        # passwd="somepasswd", # your password
+                        passwd="jpmc123", # your password
                         db="jpmcResearchBot_DB") # name of the data base
 
       # you must create a Cursor object. It will let
       #  you execute all the queries you need
       cur = con.cursor()
-      cur.execute("SELECT VERSION()")
 
+      # cur.execute("SELECT VERSION()")
       # ver = cur.fetchone()
       # print "Database version : %s " % ver
 

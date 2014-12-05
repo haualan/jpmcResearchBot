@@ -1,3 +1,9 @@
+
+# MySQL-python requires instance of mysql as depenedancy, not required for usage
+sudo apt-get install mysql
+sudo apt-get install libmysqlclient-dev
+
+sudo pip install MySQL-python
 sudo nano /etc/apache2/sites-available/jpmcResearchBot.conf
 
 <VirtualHost *:80>
