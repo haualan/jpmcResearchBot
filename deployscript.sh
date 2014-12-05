@@ -28,5 +28,5 @@ import logging
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/jpmcResearchBot/")
 
-from FlaskApp import app as application
+from jpmcResearchBot import app as application
 application.secret_key = 'secret-key'
