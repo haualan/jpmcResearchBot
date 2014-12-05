@@ -20,7 +20,7 @@ Clear vision of the equity story transformation at RWE. RWE’s CEO thus conveye
 
 More uncertainty about the future shape of the group at E.ON. Our perception remains that there is less strategic clarity at E.ON than at RWE, partly because of the group’s higher geographical and business diversification. Management is pleased with the progress of its Turkish business, whilst it continues to focus on stabilizing Eneva before further growth options are examined. E&amp;P is managed as a standalone business, given the lack of synergies with the rest of the group. Capex over the next few years will focus on renewables, distributed energy and regulated grids. Cost cutting efforts will continue, potentially beyond the need to offset inflation, but the company does not expect to communicate group-wide targets at this stage. Management says it will rotate assets on an opportunistic basis (no comment on press reports of a disposal process in Italy or Spain). In summary, E.ON’s diversification seems to be less of an advantage versus peers (particularly RWE) than it could be.  """
 
-# sample_text = removeNonAscii(sample_text)
+sample_text = removeNonAscii(sample_text)
 # sample_text = unicode(sample_text, errors='ignore')
 
-sample_text = sample_text
+# sample_text = sample_text

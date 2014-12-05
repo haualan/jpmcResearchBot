@@ -1,0 +1,2 @@
+import DB
+DB.createTablesinDB()

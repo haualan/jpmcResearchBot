@@ -1,5 +1,11 @@
 
 sudo pip intall -U numpy
+
+# need both to install all packages
+sudo pip intall -U nltk
+python -m nltk.downloader all
+
+
 # MySQL-python requires instance of mysql as depenedancy, not required for usage
 sudo apt-get install mysql
 sudo apt-get install libmysqlclient-dev
