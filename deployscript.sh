@@ -1,4 +1,5 @@
 
+sudo pip intall -U numpy
 # MySQL-python requires instance of mysql as depenedancy, not required for usage
 sudo apt-get install mysql
 sudo apt-get install libmysqlclient-dev
