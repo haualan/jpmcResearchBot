@@ -8,4 +8,4 @@ MYSQL_DB_NAME = 'jpmcResearchBot_DB'
 
 
 # controls how many keywords are returned from TF/IDF, note this is very large and contains each unique non-stop words from input document
-KEYWORDS_NUM = 30
+KEYWORDS_NUM = 300
