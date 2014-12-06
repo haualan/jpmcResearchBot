@@ -28,106 +28,106 @@ def removeNonAscii(s): return "".join(filter(lambda x: ord(x)<128, s))
 #     return jsonify({'keywords': keywords}), 201
 
 
-@app.route('/', methods=['POST'])
-def test():
+# @app.route('/', methods=['POST'])
+# def test():
 
-    return jsonify({'keywords': "hello"}), 201
+#     return jsonify({'keywords': "hello"}), 201
 
-# @app.route('/getKeywords', methods=['POST'])
-# def getKeywords():
-#     if not request.get_json(force=True) or not 'text' in request.get_json(force=True):
-#         print 'aborting'
-#         abort(400)
-
-
-#     # istr = request.json['text']
-#     istr = request.get_json(force=True)['text'] 
-#     n = int(request.get_json(force=True)['max_n'] )
-#     # remove all nonAsciiCharacters
-#     istr = removeNonAscii(istr)
-
-#     inclusion_list = DB.getInclusionList()
-#     exclusion_list = DB.getExclusionList()
-
-#     istr = removeNonAscii(istr)
-
-#     NER_results = NER.findNamedEntities(istr, inclusion_list)
-
-#     TFIDF_results = TFIDF.findTFIDFkeywords(istr)
-
-#     keywords = NER_results[0:n/2] + TFIDF_results[0:n/2]
-
-#     # omit repeats and return lowercase
-#     keywords = sorted(list(set(i.lower() for i in keywords)))
-#     keywords = NER.excludeKeywords(exclusion_list, keywords)
+@app.route('/getKeywords', methods=['POST'])
+def getKeywords():
+    if not request.get_json(force=True) or not 'text' in request.get_json(force=True):
+        print 'aborting'
+        abort(400)
 
 
+    # istr = request.json['text']
+    istr = request.get_json(force=True)['text'] 
+    n = int(request.get_json(force=True)['max_n'] )
+    # remove all nonAsciiCharacters
+    istr = removeNonAscii(istr)
 
-#     return jsonify({'keywords': keywords}), 201
+    inclusion_list = DB.getInclusionList()
+    exclusion_list = DB.getExclusionList()
 
-# @app.route('/getNER', methods=['POST'])
-# def getNER():
-#     if not request.get_json(force=True) or not 'text' in request.get_json(force=True):
-#         print 'aborting'
-#         abort(400)
+    istr = removeNonAscii(istr)
 
+    NER_results = NER.findNamedEntities(istr, inclusion_list)
 
-#     # istr = request.json['text']
-#     istr = request.get_json(force=True)['text'] 
-#     n = int(request.get_json(force=True)['max_n'] )
-#     # remove all nonAsciiCharacters
-#     istr = removeNonAscii(istr)
+    TFIDF_results = TFIDF.findTFIDFkeywords(istr)
 
-#     inclusion_list = DB.getInclusionList()
-#     exclusion_list = DB.getExclusionList()
+    keywords = NER_results[0:n/2] + TFIDF_results[0:n/2]
 
-#     istr = removeNonAscii(istr)
-
-#     NER_results = NER.findNamedEntities(istr, inclusion_list)
-
-#     # TFIDF_results = TFIDF.findTFIDFkeywords(istr)
-
-#     keywords = NER_results[0:n]
-
-#     # omit repeats and return lowercase
-#     keywords = sorted(list(set(i.lower() for i in keywords)))
-#     keywords = NER.excludeKeywords(exclusion_list, keywords)
+    # omit repeats and return lowercase
+    keywords = sorted(list(set(i.lower() for i in keywords)))
+    keywords = NER.excludeKeywords(exclusion_list, keywords)
 
 
 
-#     return jsonify({'keywords': keywords}), 201
+    return jsonify({'keywords': keywords}), 201
 
-# @app.route('/getTFIDF', methods=['POST'])
-# def getTFIDF():
-#     if not request.get_json(force=True) or not 'text' in request.get_json(force=True):
-#         print 'aborting'
-#         abort(400)
-
-
-#     # istr = request.json['text']
-#     istr = request.get_json(force=True)['text'] 
-#     n = int(request.get_json(force=True)['max_n'] )
-#     # remove all nonAsciiCharacters
-#     istr = removeNonAscii(istr)
-
-#     inclusion_list = DB.getInclusionList()
-#     exclusion_list = DB.getExclusionList()
-
-#     istr = removeNonAscii(istr)
-
-#     # NER_results = NER.findNamedEntities(istr, inclusion_list)
-
-#     TFIDF_results = TFIDF.findTFIDFkeywords(istr)
-
-#     keywords = TFIDF_results[0:n]
-
-#     # omit repeats and return lowercase
-#     keywords = list(set(i.lower() for i in keywords))
-#     keywords = NER.excludeKeywords(exclusion_list, keywords)
+@app.route('/getNER', methods=['POST'])
+def getNER():
+    if not request.get_json(force=True) or not 'text' in request.get_json(force=True):
+        print 'aborting'
+        abort(400)
 
 
+    # istr = request.json['text']
+    istr = request.get_json(force=True)['text'] 
+    n = int(request.get_json(force=True)['max_n'] )
+    # remove all nonAsciiCharacters
+    istr = removeNonAscii(istr)
 
-#     return jsonify({'keywords': keywords}), 201
+    inclusion_list = DB.getInclusionList()
+    exclusion_list = DB.getExclusionList()
+
+    istr = removeNonAscii(istr)
+
+    NER_results = NER.findNamedEntities(istr, inclusion_list)
+
+    # TFIDF_results = TFIDF.findTFIDFkeywords(istr)
+
+    keywords = NER_results[0:n]
+
+    # omit repeats and return lowercase
+    keywords = sorted(list(set(i.lower() for i in keywords)))
+    keywords = NER.excludeKeywords(exclusion_list, keywords)
+
+
+
+    return jsonify({'keywords': keywords}), 201
+
+@app.route('/getTFIDF', methods=['POST'])
+def getTFIDF():
+    if not request.get_json(force=True) or not 'text' in request.get_json(force=True):
+        print 'aborting'
+        abort(400)
+
+
+    # istr = request.json['text']
+    istr = request.get_json(force=True)['text'] 
+    n = int(request.get_json(force=True)['max_n'] )
+    # remove all nonAsciiCharacters
+    istr = removeNonAscii(istr)
+
+    inclusion_list = DB.getInclusionList()
+    exclusion_list = DB.getExclusionList()
+
+    istr = removeNonAscii(istr)
+
+    # NER_results = NER.findNamedEntities(istr, inclusion_list)
+
+    TFIDF_results = TFIDF.findTFIDFkeywords(istr)
+
+    keywords = TFIDF_results[0:n]
+
+    # omit repeats and return lowercase
+    keywords = list(set(i.lower() for i in keywords))
+    keywords = NER.excludeKeywords(exclusion_list, keywords)
+
+
+
+    return jsonify({'keywords': keywords}), 201
 
 if __name__ == '__main__':
     app.run(debug=True)
