@@ -1,10 +1,16 @@
 import nltk, re
 from nltk.chunk import RegexpParser
 import os, sys
+from os import sys, path
 # need to add path so we can access parent folder for DB settings
-sys.path.append('../')
+# sys.path.append('../')
+# parentdir = os.path.dirname(__file__)
+# print parentdir
+sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
+# print sys.path
 import sample
 import multiprocessing as mp
+# from .. import DB
 import DB
 
 
