@@ -3,6 +3,7 @@ import operator,math
 import nltk
 import string
 import os, sys
+from os import sys, path
 # need to add path so we can access parent folder for DB settings
 # sys.path.append('../')
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
