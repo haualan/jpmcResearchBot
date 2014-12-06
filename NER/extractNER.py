@@ -5,7 +5,7 @@ import os, sys
 sys.path.append('../')
 import sample
 import multiprocessing as mp
-# import DB
+import DB
 
 
 
@@ -128,12 +128,12 @@ def findNamedEntities(raw_text, inclusion_list):
 
 if __name__ == '__main__':
 
-  inclusion_list = ['alan', 'Curie', 'today alan alan', 'business diversification']
-  exclusion_list = ['Nasdaq']
+  # inclusion_list = ['alan', 'Curie', 'today alan alan', 'business diversification']
+  # exclusion_list = ['Nasdaq']
 
   # con = DB.get_con()
-  # inclusion_list = DB.getInclusionList()
-  # exclusion_list = DB.getExclusionList()
+  inclusion_list = DB.getInclusionList()
+  exclusion_list = DB.getExclusionList()
 
   # print inclusion_list
  
