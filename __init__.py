@@ -70,8 +70,8 @@ def getKeywords():
                 keywords.append(NER_results[current_k])
         else:
             current_j += 1
-            # keywords.append(str(len(TFIDF_results)))
-            keywords.append(str(len(TFIDF_results)))
+            if TFIDF_results[current_j] not in keywords:
+                keywords.append(TFIDF_results[current_j])
     
     keywords = NER.excludeKeywords(exclusion_list, keywords)
 
@@ -98,8 +98,6 @@ def getNER():
     istr = removeNonAscii(istr)
 
     NER_results = NER.findNamedEntities(istr, inclusion_list)
-
-    # TFIDF_results = TFIDF.findTFIDFkeywords(istr)
 
     keywords = NER_results[0:n]
 
@@ -129,21 +127,16 @@ def getTFIDF():
 
     istr = removeNonAscii(istr)
 
-    # NER_results = NER.findNamedEntities(istr, inclusion_list)
-
     TFIDF_results = TFIDF.findTFIDFkeywords(istr)
 
-    # keywords = TFIDF_results[0:n]
-    keywords = TFIDF_results
+    keywords = TFIDF_results[0:n]
 
 
-    # omit repeats and return lowercase
-    keywords = list(set(i.lower() for i in keywords))
-    # keywords = NER.excludeKeywords(exclusion_list, keywords)
+    keywords = NER.excludeKeywords(exclusion_list, keywords)
 
 
 
-    return jsonify({'keywords': keywords, 'max_n': n, 'len': len(TFIDF_results)}), 201
+    return jsonify({'keywords': keywords}), 201
 
 if __name__ == '__main__':
     app.run(debug=True)
