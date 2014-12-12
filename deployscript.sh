@@ -1,9 +1,9 @@
 
 sudo pip intall -U numpy
 
-# need both to install all packages
+# need both to install all packages, must use 2nd line to download standard language parsers to a central location
 sudo pip intall -U nltk
-python -m nltk.downloader all
+sudo python -m nltk.downloader -d /usr/share/nltk_data all
 
 
 # MySQL-python requires instance of mysql as depenedancy, not required for usage

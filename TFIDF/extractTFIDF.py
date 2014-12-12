@@ -139,4 +139,7 @@ if __name__ == "__main__":
     # string_a = "andy alan jpmc limited research bot maker limited process "
     string_a = sample.sample_text
     ke = keywordExtractor()
-    print ke.extract(string_a,incl_scores=False)
+    res = ke.extract(string_a,incl_scores=False)
+    print res
+    print len(res)
+
