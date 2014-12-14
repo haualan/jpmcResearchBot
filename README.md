@@ -36,6 +36,8 @@ Inclusion table and exclusion table are also maintained in the mySQL database as
 -----------
 III. Configuration
 -----------
+0) Python + Flask needs to sit on top of Apache in order to serve the API to extrernal calls
+
 All the configuration parameters are saved in the file config.py
 1)
 mySQL Configuration
