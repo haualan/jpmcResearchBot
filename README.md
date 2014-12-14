@@ -13,34 +13,52 @@ contain the name entity extracted using the NER(name entity recognition algorith
 # I. File List
 
 ----------
-
 ├── DB.py
 
 ├── NER
 
-│   ├── __init__.py
+│   ├── \_\_init\_\_.py
 
 │   ├── extractNER.py
 
 │   └── sample.py
+
 ├── README.md
+
 ├── TFIDF
-│   ├── __init__.py
+
+│   ├── \_\_init\_\_.py
+
 │   ├── extractTFIDF.py
+
 │   ├── initialIdf.py
+
 │   ├── sample.py
+
 │   └── txtAssets
-│       ├── 20140702_CMTI_.txt
-│       ├── JPM_EM_Fixed_Income_Flow_2014-02-06_1316372.txt
-│       ├── JPM_FX_Markets_Weekly_Cu_2014-07-19_1444037.txt
-│       ├── JPM_Municipal_Bond_Porti_2014-01-31_1311449.txt
-│       ├── JPM_US_Equity_Strategy_F_2014-03-07_1340480.txt
-│       └── jpmc_abstract.txt
-├── __init__.py
+
+│       ├── 20140702\_CMTI\_.txt
+
+│       ├── JPM\_EM\_Fixed\_Income\_Flow\_2014-02-06\_1316372.txt
+
+│       ├── JPM\_FX\_Markets\_Weekly\_Cu\_2014-07-19\_1444037.txt
+
+│       ├── JPM\_Municipal\_Bond\_Porti\_2014-01-31\_1311449.txt
+
+│       ├── JPM\_US\_Equity\_Strategy\_F\_2014-03-07\_1340480.txt
+
+│       └── jpmc\_abstract.txt
+
+├──\_\_init\_\_.py
+
 ├── config.py
+
 ├── createTablesInDB.py
+
 ├── deployscript.sh
+
 ├── sample.py
+
 └── test.py
 
 ----------
