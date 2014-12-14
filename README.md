@@ -11,6 +11,11 @@ contain the name entity extracted using the NER(name entity recognition algorith
 ----------
 
 # I. File List
+- [ ] a bigger project
+  - [ ] first subtask #1234
+  - [ ] follow up subtask #4321
+  - [ ] final subtask cc @mention
+- [ ] a separate task
 
 ----------
 ├── DB.py
