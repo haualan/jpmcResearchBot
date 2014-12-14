@@ -81,6 +81,11 @@ Inclusion table and exclusion table are also maintained in the mySQL database as
 # III. Configuration
 
 -----------
+Python Dependencies:
+- Flask
+- Numpy
+- NLTK (see http://www.nltk.org/data.html, additional data needs to downloaded to /usr/share in order for the module to work correctly)
+- MySQL-python (if you decide to use mysql as the backend)
 
 0) Python + Flask needs to sit on some webserver in order for the API to serve extrernal HTTP calls. The test server is hosted on an Ubuntu Amazon cloud instance with Apache. Hosting the API on other webservers are possible. Please see this deployment section for examples and configuration:
 
