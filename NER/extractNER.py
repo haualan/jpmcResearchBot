@@ -155,7 +155,7 @@ if __name__ == '__main__':
   print 'EXAMPLE: filter NE....................'
   NE = excludeKeywords(exclusion_list, NE)
 
-  print NE
+  print len(NE), NE
 
 
 

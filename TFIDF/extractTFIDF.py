@@ -90,7 +90,7 @@ class keywordExtractor:
         return tf*idf
        
     def extract(self, text, incl_scores=False):
-        text +=  "." if not text[-1] == "." else None
+        text +=  "." if not text[-1] == "." else ""
         sentences = nltk.sent_tokenize(text)
         phrase_list = self._generate_candidate_keywords(sentences)
         word_scores = self._calculate_word_scores( phrase_list)

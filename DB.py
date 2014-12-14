@@ -116,11 +116,15 @@ def execSQL(sqlStr):
 def getInclusionList():
     # returns an array of words that needs to be included in the keywords
   result = execSQL("SELECT word FROM T_inclusion")
+  if len(result) == 0:
+    result = [["z"]]
   return list(map(lambda x: x[0],result))
 
 def getExclusionList():
     # returns an array of words that needs to be excluded in the keywords
   result = execSQL("SELECT word FROM T_exclusion")
+  if len(result) == 0:
+    result = [["z"]]
   return list(map(lambda x: x[0],result))
 
 
