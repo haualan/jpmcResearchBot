@@ -15,32 +15,29 @@ contain the name entity extracted using the NER(name entity recognition algorith
 ----------
 
 ├── DB.py
-
 ├── NER
-
-│   ├── extractNER.py
-
-│   ├── sample.py
-
+│   ├── __init__.py
+│   ├── extractNER.py
+│   └── sample.py
 ├── README.md
-
 ├── TFIDF
-
-│   ├── extractTFIDF.py
-
-│   ├── initialIdf.py
-
-│   └── txtAssets
-
+│   ├── __init__.py
+│   ├── extractTFIDF.py
+│   ├── initialIdf.py
+│   ├── sample.py
+│   └── txtAssets
+│       ├── 20140702_CMTI_.txt
+│       ├── JPM_EM_Fixed_Income_Flow_2014-02-06_1316372.txt
+│       ├── JPM_FX_Markets_Weekly_Cu_2014-07-19_1444037.txt
+│       ├── JPM_Municipal_Bond_Porti_2014-01-31_1311449.txt
+│       ├── JPM_US_Equity_Strategy_F_2014-03-07_1340480.txt
+│       └── jpmc_abstract.txt
+├── __init__.py
 ├── config.py
-
 ├── createTablesInDB.py
-
 ├── deployscript.sh
-
 ├── sample.py
-
-├── test.py
+└── test.py
 
 ----------
 
