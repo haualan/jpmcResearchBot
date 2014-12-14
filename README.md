@@ -15,9 +15,13 @@ contain the name entity extracted using the NER(name entity recognition algorith
 ----------
 
 ├── DB.py
+
 ├── NER
+
 │   ├── __init__.py
+
 │   ├── extractNER.py
+
 │   └── sample.py
 ├── README.md
 ├── TFIDF
