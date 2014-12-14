@@ -36,9 +36,12 @@ Inclusion table and exclusion table are also maintained in the mySQL database as
 -----------
 III. Configuration
 -----------
-0) Python + Flask needs to sit on top of Apache in order to serve the API to extrernal calls
+0) Python + Flask needs to sit on some webserver in order for the API to serve extrernal HTTP calls. The test server is hosted on an Ubuntu Amazon cloud instance with Apache. Hosting the API on other webservers are possible. Please see this deployment section for examples and configuration:
+http://flask.pocoo.org/docs/0.10/deploying/
 
-All the configuration parameters are saved in the file config.py
+For pure testing on localhost. It is possible to run __init__.py directly from your favorite Python IDE and ping your server on via localhost:5000.
+
+Configuration parameters for the API are saved in the file config.py
 1)
 mySQL Configuration
     to enable mySQL, 4 paramters must be set in the config.py. MYSQL_HOST, MYSQL_USER, MYSQL_PASSWD, MYSQL_DB_NAME
