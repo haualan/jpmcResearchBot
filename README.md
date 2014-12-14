@@ -37,15 +37,15 @@ contain the name entity extracted using the NER(name entity recognition algorith
 
 │   └── txtAssets
 
-│       ├── 20140702\_CMTI\_.txt
+│         ├── 20140702\_CMTI\_.txt
 
-│       ├── JPM\_EM\_Fixed\_Income\_Flow\_2014-02-06\_1316372.txt
+│         ├── JPM\_EM\_Fixed\_Income\_Flow\_2014-02-06\_1316372.txt
 
-│       ├── JPM\_FX\_Markets\_Weekly\_Cu\_2014-07-19\_1444037.txt
+│         ├── JPM\_FX\_Markets\_Weekly\_Cu\_2014-07-19\_1444037.txt
 
-│       ├── JPM\_Municipal\_Bond\_Porti\_2014-01-31\_1311449.txt
+│         ├── JPM\_Municipal\_Bond\_Porti\_2014-01-31\_1311449.txt
 
-│       ├── JPM\_US\_Equity\_Strategy\_F\_2014-03-07\_1340480.txt
+│         ├── JPM\_US\_Equity\_Strategy\_F\_2014-03-07\_1340480.txt
 
 │       └── jpmc\_abstract.txt
 
