@@ -1,5 +1,4 @@
 jpmcResearchBot
-
 ===============
 
 The main function of this tool is to extract suggested tags from a given document or a given string content.
