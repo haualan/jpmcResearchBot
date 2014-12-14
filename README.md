@@ -18,15 +18,13 @@ contain the name entity extracted using the NER(name entity recognition algorith
 - [ ] a separate task
 
 ----------
-├── DB.py
+- [ ] DB.py
 
-├── NER
+- [ ] NER
 
-│   ├── \_\_init\_\_.py
-
-│   ├── extractNER.py
-
-│   └── sample.py
+  - [ ] \_\_init\_\_.py
+  - [ ] extractNER.py
+  - [ ]  └── sample.py
 
 ├── README.md
 
