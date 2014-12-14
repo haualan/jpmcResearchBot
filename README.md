@@ -85,7 +85,7 @@ Inclusion table and exclusion table are also maintained in the mySQL database as
 
 http://flask.pocoo.org/docs/0.10/deploying/
 
-For pure testing on localhost. It is possible to run __init__.py directly from your favorite Python IDE and ping your server on via localhost:5000.
+For pure testing on localhost. It is possible to run \_\_init\_\_.py directly from your favorite Python IDE and ping your server on via localhost:5000.
 
 Configuration parameters for the API are saved in the file config.py
 
