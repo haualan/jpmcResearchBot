@@ -21,26 +21,20 @@ contain the name entity extracted using the NER(name entity recognition algorith
 - [ ] DB.py
 
 - [ ] NER
-
   - [ ] \_\_init\_\_.py
   - [ ] extractNER.py
-  - [ ]  └── sample.py
+  - [ ] sample.py
 
-├── README.md
+- [ ]  README.md
 
-├── TFIDF
+- [ ] TFIDF
 
-│   ├── \_\_init\_\_.py
-
-│   ├── extractTFIDF.py
-
-│   ├── initialIdf.py
-
-│   ├── sample.py
-
-│   └── txtAssets
-
-│         ├── 20140702\_CMTI\_.txt
+  - [ ] \_\_init\_\_.py
+  - [ ] extractTFIDF.py
+  - [ ] initialIdf.py
+  - [ ] sample.py
+  - [ ] txtAssets
+    - [ ] 20140702\_CMTI\_.txt
 
 │         ├── JPM\_EM\_Fixed\_Income\_Flow\_2014-02-06\_1316372.txt
 
