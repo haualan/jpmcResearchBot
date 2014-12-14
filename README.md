@@ -75,7 +75,7 @@ Configuration parameters for the API are saved in the file config.py
 
 mySQL Configuration
 
-    to enable mySQL, 4 paramters must be set in the config.py. MYSQL_HOST, MYSQL_USER, MYSQL_PASSWD, MYSQL_DB_NAME
+  to enable mySQL, 4 paramters must be set in the config.py. MYSQL_HOST, MYSQL_USER, MYSQL_PASSWD, MYSQL_DB_NAME
 
 2)
 
