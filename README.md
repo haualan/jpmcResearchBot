@@ -134,19 +134,26 @@ Documents configuration
 Once your server is running. There are 3 types of HTTP calls available, they all require the POST method:
 
 http://54.149.112.169:5000/getKeywords
+
   Uses a half and half approach for the algorithm: half from Named Entities, half from TFIDF
+  
 http://54.149.112.169:5000/getTFIDF
+
   Uses TFIDF. It returns unigrams (single words only).
+  
 http://54.149.112.169:5000/getNER
+
   Uses Named Entity Recognition (NER) returns significant name-like nouns (could be longer than a single word)
   
 They all take the same text input. In the Header section of the HTTP request, you can specify this as a raw text or JSON input:
+
 {
 	"text":"<some text>",
 	"max_n":<maximum keywords returned> 
 }
 
 Example:
+
 {
 	"text":" Near term, however, we would expect investors to continue reducing underweight positions indiscriminately in both E.ON and RWE given the perceived potential upside from capacity payments, higher power prices, further cost cutting and a burden sharing deal with the government on long-term nuclear liabilities. ",
 	"max_n":30
