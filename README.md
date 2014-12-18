@@ -133,15 +133,15 @@ Documents configuration
 -----------
 Once your server is running. There are 3 types of HTTP calls available, they all require the POST method:
 
-http://54.149.112.169:5000/getKeywords
+http://<ServerIP>:5000/getKeywords
 
   Uses a half and half approach for the algorithm: half from Named Entities, half from TFIDF
   
-http://54.149.112.169:5000/getTFIDF
+http://<ServerIP>:5000/getTFIDF
 
   Uses TFIDF. It returns unigrams (single words only).
   
-http://54.149.112.169:5000/getNER
+http://<ServerIP>:5000/getNER
 
   Uses Named Entity Recognition (NER) returns significant name-like nouns (could be longer than a single word)
   
